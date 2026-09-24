@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-vi="Hỗ trợ - Limno" data-en="Support - Limno">Limno - Support</title>
+  <link rel="icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/i18n.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="">Limno</a>
+    <nav class="nav">
+      <a href="./"><span data-lang="vi">Trang chủ</span><span data-lang="en">Home</span></a>
+      <a href="support.html" aria-current="page"><span data-lang="vi">Hỗ trợ</span><span data-lang="en">Support</span></a>
+      <a href="privacy.html"><span data-lang="vi">Quyền riêng tư</span><span data-lang="en">Privacy</span></a>
+      <button id="lang-switch" class="lang-switch" type="button" aria-label="Language / Ngôn ngữ">EN</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+<!-- ===================== TIẾNG VIỆT ===================== -->
+<article data-lang="vi">
+  <h1 class="page-title">Hỗ trợ</h1>
+  <p class="muted">Câu hỏi thường gặp về Limno. Không thấy câu trả lời? Viết cho chúng tôi ở cuối trang.</p>
+
+  <h2>Câu hỏi thường gặp</h2>
+  <details>
+    <summary>Dữ liệu của tôi được lưu ở đâu? Có sao lưu không?</summary>
+    <p>Mọi dữ liệu hồ nằm trên máy bạn, không có tài khoản hay máy chủ. Vì vậy Limno chưa có sao lưu lên mạng: đổi máy hoặc gỡ app thì dữ liệu cũ sẽ không đi theo. Sao lưu hệ thống của Android/iOS có thể giữ lại dữ liệu tuỳ cấu hình máy.</p>
+  </details>
+  <details>
+    <summary>App dùng đơn vị gì?</summary>
+    <p>Thể tích tính bằng lít, nhiệt độ °C, kích thước cm, nồng độ ppm (mg/L), GH/KH theo °dH. App tự tính thể tích nước thật (đã trừ nền, đá, lũa) và dùng số đó cho mọi công cụ tính.</p>
+  </details>
+  <details>
+    <summary>Tôi nhập NH₃ hay NH₄⁺? Vì sao app báo khác kit test?</summary>
+    <p>Hầu hết kit test đo <strong>tổng ammonia (TAN = NH₃ + NH₄⁺)</strong>, và đó là số bạn nhập. Chỉ phần NH₃ tự do mới độc cho cá, và tỉ lệ này tăng mạnh khi pH và nhiệt độ cao. Limno suy NH₃ tự do từ TAN, pH và nhiệt độ rồi mới so với ngưỡng độc, nên cùng một số TAN có thể an toàn ở hồ này nhưng nguy hiểm ở hồ khác.</p>
+  </details>
+  <details>
+    <summary>Có thể tin hoàn toàn vào liều lượng app tính không?</summary>
+    <p>Không. Công cụ tính cho ra một <strong>khoảng</strong> tham khảo dựa trên thể tích hồ. Luôn đối chiếu nhãn sản phẩm và hướng dẫn của nhà sản xuất; khi hai bên khác nhau, hãy theo nhãn. Kết quả CO₂ từ pH và KH chỉ là ước lượng và có thể sai lệch nếu nước có chất đệm khác.</p>
+  </details>
+  <details>
+    <summary>Thông tin loài lấy từ đâu? Tôi thấy thông tin sai.</summary>
+    <p>Dữ liệu loài được tổng hợp từ nhiều nguồn tham khảo, ghi rõ ở Cài đặt → Bản quyền &amp; ghi nhận. Các ngưỡng là khoảng phổ biến, cá thể thực tế có thể khác. Nếu bạn thấy chỗ sai, hãy gửi email kèm tên loài và nguồn, chúng tôi sẽ sửa trong lần cập nhật dữ liệu tới.</p>
+  </details>
+  <details>
+    <summary>Tôi không nhận được thông báo nhắc việc</summary>
+    <ul>
+      <li>Kiểm tra app đã được cấp quyền thông báo trong cài đặt hệ thống.</li>
+      <li>Android: tắt tối ưu pin cho Limno, và cho phép "Báo thức và lời nhắc" nếu máy hỏi. Một số hãng (Xiaomi, Oppo, Samsung...) còn có chế độ tự dừng app chạy nền, hãy thêm Limno vào danh sách ngoại lệ.</li>
+      <li>iOS: kiểm tra chế độ Tập trung (Focus) không chặn Limno.</li>
+      <li>Việc đang tạm dừng sẽ không nhắc.</li>
+    </ul>
+  </details>
+  <details>
+    <summary>Quảng cáo và lựa chọn quyền riêng tư</summary>
+    <p>Limno hiển thị một quảng cáo nhỏ để duy trì miễn phí. Ở EEA, Anh và Thuỵ Sĩ, bạn có thể đổi lựa chọn đồng ý trong app: Cài đặt → Quyền riêng tư quảng cáo. Trên iOS, quyền theo dõi nằm ở Cài đặt → Quyền riêng tư &amp; Bảo mật → Theo dõi. Chi tiết ở <a href="privacy.html">Chính sách quyền riêng tư</a>.</p>
+  </details>
+  <details>
+    <summary>Làm sao xoá toàn bộ dữ liệu?</summary>
+    <p>Gỡ cài đặt app, hoặc trên Android vào Cài đặt hệ thống → Ứng dụng → Limno → Bộ nhớ → Xoá dữ liệu. Dữ liệu đã xoá không thể khôi phục.</p>
+  </details>
+
+  <div class="contact">
+    <h2 style="margin-top:0">Liên hệ</h2>
+    <p>Báo lỗi, góp ý hay hỏi đáp, hãy gửi email tới <a href="mailto:phuongnamtruong.it@gmail.com?subject=Limno">phuongnamtruong.it@gmail.com</a>. Nếu báo lỗi, xin kèm tên máy, phiên bản hệ điều hành và các bước để lặp lại lỗi.</p>
+  </div>
+</article>
+
+<!-- ===================== ENGLISH ===================== -->
+<article data-lang="en">
+  <h1 class="page-title">Support</h1>
+  <p class="muted">Frequently asked questions about Limno. Can't find your answer? Write to us at the bottom of the page.</p>
+
+  <h2>FAQ</h2>
+  <details>
+    <summary>Where is my data stored? Is it backed up?</summary>
+    <p>All tank data lives on your device, with no account or server. That means Limno has no cloud backup yet: if you switch phones or uninstall, your data does not come along. Android/iOS system backups may keep it depending on your device settings.</p>
+  </details>
+  <details>
+    <summary>Which units does the app use?</summary>
+    <p>Volume in litres, temperature in °C, dimensions in cm, concentrations in ppm (mg/L), GH/KH in °dH. The app works out the real water volume (minus substrate, rock and wood) and uses it in every calculator.</p>
+  </details>
+  <details>
+    <summary>Do I enter NH₃ or NH₄⁺? Why does the app disagree with my test kit?</summary>
+    <p>Most test kits measure <strong>total ammonia (TAN = NH₃ + NH₄⁺)</strong>, and that is what you enter. Only free NH₃ is toxic to fish, and its share rises sharply with pH and temperature. Limno derives free NH₃ from TAN, pH and temperature before comparing it to toxic thresholds, so the same TAN reading can be safe in one tank and dangerous in another.</p>
+  </details>
+  <details>
+    <summary>Can I fully rely on the doses the app calculates?</summary>
+    <p>No. Calculators give a reference <strong>range</strong> based on your tank volume. Always check the product label and the manufacturer's instructions; when they disagree, follow the label. CO₂ from pH and KH is an estimate and can be off if your water has other buffers.</p>
+  </details>
+  <details>
+    <summary>Where does species information come from? I found a mistake.</summary>
+    <p>Species data is compiled from several references, credited in Settings → Copyright &amp; credits. Ranges are typical values and individual fish may differ. If you spot a mistake, email us with the species name and your source and we will fix it in the next data update.</p>
+  </details>
+  <details>
+    <summary>I don't get reminder notifications</summary>
+    <ul>
+      <li>Make sure notifications are allowed for Limno in system settings.</li>
+      <li>Android: turn off battery optimisation for Limno, and allow "Alarms &amp; reminders" if asked. Some brands (Xiaomi, Oppo, Samsung...) also stop background apps; add Limno to the exceptions.</li>
+      <li>iOS: check that a Focus mode is not silencing Limno.</li>
+      <li>Paused tasks do not send reminders.</li>
+    </ul>
+  </details>
+  <details>
+    <summary>Ads and privacy choices</summary>
+    <p>Limno shows one small ad to stay free. In the EEA, UK and Switzerland you can change your consent in the app: Settings → Ad privacy. On iOS, tracking permission is under Settings → Privacy &amp; Security → Tracking. Details in the <a href="privacy.html">Privacy policy</a>.</p>
+  </details>
+  <details>
+    <summary>How do I delete all my data?</summary>
+    <p>Uninstall the app, or on Android go to system Settings → Apps → Limno → Storage → Clear data. Deleted data cannot be recovered.</p>
+  </details>
+
+  <div class="contact">
+    <h2 style="margin-top:0">Contact</h2>
+    <p>For bug reports, feedback or questions, email <a href="mailto:phuongnamtruong.it@gmail.com?subject=Limno">phuongnamtruong.it@gmail.com</a>. For bugs, please include your device model, OS version and the steps to reproduce.</p>
+  </div>
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Limno</span>
+    <a href="./"><span data-lang="vi">Trang chủ</span><span data-lang="en">Home</span></a>
+    <a href="privacy.html"><span data-lang="vi">Chính sách quyền riêng tư</span><span data-lang="en">Privacy policy</span></a>
+  </div>
+</footer>
+</body>
+</html>

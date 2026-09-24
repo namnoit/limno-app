@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-vi="Limno - Quản lý hồ thuỷ sinh" data-en="Limno - Freshwater aquarium manager">Limno</title>
+  <meta name="description" content="Limno: quản lý hồ thuỷ sinh nước ngọt - thông số nước, cảnh báo, chu trình nitơ, tra cứu loài, nhắc việc. Freshwater aquarium manager.">
+  <link rel="icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/i18n.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="">Limno</a>
+    <nav class="nav">
+      <a href="./" aria-current="page"><span data-lang="vi">Trang chủ</span><span data-lang="en">Home</span></a>
+      <a href="support.html"><span data-lang="vi">Hỗ trợ</span><span data-lang="en">Support</span></a>
+      <a href="privacy.html"><span data-lang="vi">Quyền riêng tư</span><span data-lang="en">Privacy</span></a>
+      <button id="lang-switch" class="lang-switch" type="button" aria-label="Language / Ngôn ngữ">EN</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <img class="icon" src="assets/icon.svg" alt="Limno">
+    <h1>Limno</h1>
+    <p data-lang="vi">Người bạn đồng hành cho hồ thuỷ sinh nước ngọt: ghi thông số nước, nhận cảnh báo sớm, đi qua chu trình nitơ và chọn loài hợp nhau.</p>
+    <p data-lang="en">A companion for your freshwater aquarium: log water parameters, get early warnings, get through the nitrogen cycle and pick species that get along.</p>
+
+    <div class="badges">
+      <!-- TODO: thay href="#" bằng link Google Play khi app lên store -->
+      <a href="#">
+        <img data-lang="vi" src="assets/badges/google-play-vi.svg" alt="Tải nội dung trên Google Play">
+        <img data-lang="en" src="assets/badges/google-play-en.svg" alt="Get it on Google Play">
+      </a>
+      <!-- TODO: thay href="#" bằng link App Store khi app lên store -->
+      <a href="#">
+        <img data-lang="vi" src="assets/badges/app-store-vi.svg" alt="Tải xuống trên App Store">
+        <img data-lang="en" src="assets/badges/app-store-en.svg" alt="Download on the App Store">
+      </a>
+    </div>
+    <p class="muted" data-lang="vi">Miễn phí. Không cần tài khoản - dữ liệu hồ nằm trên máy bạn.</p>
+    <p class="muted" data-lang="en">Free. No account needed - your tank data stays on your device.</p>
+  </section>
+
+  <h2><span data-lang="vi">Tính năng</span><span data-lang="en">Features</span></h2>
+  <div class="features">
+    <div class="card">
+      <span class="emoji" aria-hidden="true">🐠</span>
+      <h3><span data-lang="vi">Quản lý nhiều hồ</span><span data-lang="en">Multiple tanks</span></h3>
+      <p data-lang="vi">Khai kích thước, thể tích thực, nền, đèn, CO₂. App tự tính thể tích nước thật để mọi phép tính dùng đúng số.</p>
+      <p data-lang="en">Record dimensions, net volume, substrate, light and CO₂. Limno works out the real water volume so every calculation uses the right number.</p>
+    </div>
+    <div class="card">
+      <span class="emoji" aria-hidden="true">📈</span>
+      <h3><span data-lang="vi">Nhật ký thông số nước</span><span data-lang="en">Water parameter log</span></h3>
+      <p data-lang="vi">Ghi pH, NH₃/NH₄⁺, NO₂, NO₃, GH, KH, nhiệt độ... Biểu đồ có vùng mục tiêu và mốc sự kiện như thay nước, thêm cá.</p>
+      <p data-lang="en">Log pH, ammonia, nitrite, nitrate, GH, KH, temperature and more. Charts show target bands and event markers like water changes and new fish.</p>
+    </div>
+    <div class="card">
+      <span class="emoji" aria-hidden="true">⚠️</span>
+      <h3><span data-lang="vi">Cảnh báo thông minh</span><span data-lang="en">Smart alerts</span></h3>
+      <p data-lang="vi">Phát hiện xu hướng xấu sớm, kèm nguyên nhân có thể và cách xử lý. NH₃ tự do được suy từ TAN, pH và nhiệt độ.</p>
+      <p data-lang="en">Spots bad trends early, with likely causes and what to do. Free ammonia is derived from TAN, pH and temperature.</p>
+    </div>
+    <div class="card">
+      <span class="emoji" aria-hidden="true">🔄</span>
+      <h3><span data-lang="vi">Trợ lý chu trình nitơ</span><span data-lang="en">Cycling assistant</span></h3>
+      <p data-lang="vi">Biết hồ đang ở giai đoạn nào, nên làm gì tiếp theo và vì sao chu trình bị đứng.</p>
+      <p data-lang="en">Know which stage your tank is in, what to do next and why the cycle might be stalling.</p>
+    </div>
+    <div class="card">
+      <span class="emoji" aria-hidden="true">🔎</span>
+      <h3><span data-lang="vi">Tra cứu loài và độ hợp</span><span data-lang="en">Species and compatibility</span></h3>
+      <p data-lang="vi">Tra cứu offline, tìm không dấu. Kiểm tra loài có hợp với hồ và với nhau trước khi thả, xem sức tải của hồ.</p>
+      <p data-lang="en">Browse offline and search forgivingly. Check whether a species fits your tank and its tankmates before adding it, and see your bioload.</p>
+    </div>
+    <div class="card">
+      <span class="emoji" aria-hidden="true">🗓️</span>
+      <h3><span data-lang="vi">Nhắc việc chăm sóc</span><span data-lang="en">Care reminders</span></h3>
+      <p data-lang="vi">Lịch thay nước, bón phân, vệ sinh lọc theo chu kỳ. Đánh dấu xong ngay từ thông báo hoặc widget.</p>
+      <p data-lang="en">Recurring water changes, fertilising and filter cleaning. Mark tasks done right from the notification or widget.</p>
+    </div>
+    <div class="card">
+      <span class="emoji" aria-hidden="true">🧮</span>
+      <h3><span data-lang="vi">Công cụ tính</span><span data-lang="en">Calculators</span></h3>
+      <p data-lang="vi">Thể tích hồ, trộn nước thay, GH/KH mục tiêu, hạ NO₃, CO₂ từ pH và KH, liều muối, khử clo và thuốc.</p>
+      <p data-lang="en">Tank volume, water change mixing, target GH/KH, lowering nitrate, CO₂ from pH and KH, salt, dechlorinator and medication doses.</p>
+    </div>
+  </div>
+
+  <h2><span data-lang="vi">Ảnh chụp màn hình</span><span data-lang="en">Screenshots</span></h2>
+  <!-- Thay các file trong assets/screenshots/, xem README -->
+  <div class="shots">
+    <figure><img src="assets/screenshots/placeholder-1.svg" alt="" loading="lazy"></figure>
+    <figure><img src="assets/screenshots/placeholder-2.svg" alt="" loading="lazy"></figure>
+    <figure><img src="assets/screenshots/placeholder-3.svg" alt="" loading="lazy"></figure>
+    <figure><img src="assets/screenshots/placeholder-4.svg" alt="" loading="lazy"></figure>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Limno</span>
+    <a href="support.html"><span data-lang="vi">Hỗ trợ</span><span data-lang="en">Support</span></a>
+    <a href="privacy.html"><span data-lang="vi">Chính sách quyền riêng tư</span><span data-lang="en">Privacy policy</span></a>
+  </div>
+</footer>
+</body>
+</html>
