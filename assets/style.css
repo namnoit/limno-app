@@ -71,6 +71,10 @@ html[lang="en"] [data-lang="vi"] { display: none !important; }
 .badges { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 28px 0 8px; }
 .badges a { display: inline-flex; }
 .badges img { height: 48px; width: auto; min-width: 144px; border-radius: 8px; }
+/* Badge Play (PNG chính thức) có sẵn viền trong suốt, nên đặt cao hơn để
+   phần nhìn thấy bằng badge Apple. Cùng tỉ lệ với punyo-app (64/50). */
+.badges img[src*="google-play"] { height: 62px; min-width: 0; border-radius: 0; }
+.badges a { align-items: center; }
 
 /* Tính năng */
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }

@@ -12,7 +12,7 @@ HTML/CSS/JS thuần, không build, không CDN - chạy thẳng trên GitHub Page
 | `support.html` | FAQ + email liên hệ |
 | `assets/i18n.js` | Chọn ngôn ngữ vi/en |
 | `assets/style.css` | Style, màu lấy từ `LimnoColorScheme` của app, tự theo dark mode |
-| `assets/icon.svg` | Icon tạm - thay bằng icon thật của app khi có |
+| `assets/icon-192.png`, `apple-touch-icon.png`, `og-image.png` | Icon app (xuất từ `ic_limno_ios.png` / `ic_launcher-playstore.png` của repo Limno); `og-image.png` dùng cho link preview |
 
 ## Ngôn ngữ
 
@@ -26,7 +26,7 @@ Sửa nội dung: sửa **cả hai** khối vi và en. Không dùng dấu gạch
 ## Việc còn lại trước khi phát hành
 
 - **Badge store:** tải badge chính thức và đặt vào `assets/badges/` với đúng tên:
-  - `google-play-vi.svg`, `google-play-en.svg` - https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/badge-guidelines/
+  - `google-play-vi.png`, `google-play-en.png` - https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/badge-guidelines/
   - `app-store-vi.svg`, `app-store-en.svg` - https://developer.apple.com/app-store/marketing/guidelines/
   CSS ép cùng chiều cao 48px nên hai badge luôn bằng nhau. Không tự vẽ lại badge.
 - **Link store:** thay `href="#"` (có comment `TODO`) trong `index.html`.
