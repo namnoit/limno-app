@@ -1,0 +1,12 @@
+/manifest.json
+  Cache-Control: no-cache
+/img/index.json
+  Cache-Control: no-cache
+/db/*
+  Cache-Control: public, max-age=31536000, immutable
+/i18n/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/thumb/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/full/*
+  Cache-Control: public, max-age=31536000, immutable
