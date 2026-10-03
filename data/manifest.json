@@ -1,7 +1,4 @@
 {
-  "dataVersion": 1,
-  "minAppVersion": 1,
-  "killSwitch": false,
-  "patches": [],
-  "i18n": {}
+  "payload": "{\"dataVersion\":1,\"minAppVersion\":{\"android\":1,\"ios\":1},\"killSwitch\":false,\"patches\":[],\"i18n\":{},\"speciesRequestForm\":{\"url\":\"https://docs.google.com/forms/d/e/1FAIpQLSf0Kedgyhrg3899IJhqSRd7sRtSu9YUMgUdMLqol4NNHAw7-g/formResponse\",\"fields\":{\"name\":\"entry.1203977388\",\"scientificName\":\"entry.230822854\",\"note\":\"entry.1990448051\",\"locale\":\"entry.1108741961\",\"dataVersion\":\"entry.1594172753\"}},\"issuedAt\":1791040213}",
+  "sig": "3046022100f491a66ba151eae81cbe85358ed4a63e0978612eb67cb2748976e6e0e47a963c022100eac85a87fd6403b74e5d4d69447ed3113b1d6878a1fcc68a89a22dbd5fd7efc4"
 }
