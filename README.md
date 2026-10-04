@@ -7,10 +7,12 @@ HTML/CSS/JS thuần, không build, không CDN - chạy thẳng trên GitHub Page
 
 | File | Nội dung |
 |---|---|
-| `index.html` | Giới thiệu, tính năng, badge store, ảnh chụp màn hình |
+| `index.html` | Giới thiệu, badge store, ảnh chụp màn hình, tính năng |
+| `terms.html`, `license.html` | Điều khoản sử dụng, giấy phép dữ liệu loài |
 | `privacy.html` | Chính sách quyền riêng tư (khớp với những gì app thật sự thu thập) |
 | `support.html` | FAQ + email liên hệ |
 | `assets/i18n.js` | Chọn ngôn ngữ vi/en |
+| `assets/toc.js` | Mục lục cho `privacy` / `terms` / `license`: tự dựng từ các `<h2>`, thêm mục chỉ cần thêm `<h2>` |
 | `assets/style.css` | Style, màu lấy từ `LimnoColorScheme` của app, tự theo dark mode |
 | `assets/icon-192.png`, `apple-touch-icon.png`, `og-image.png` | Icon app (xuất từ `ic_limno_ios.png` / `ic_launcher-playstore.png` của repo Limno); `og-image.png` dùng cho link preview |
 
@@ -29,9 +31,20 @@ Sửa nội dung: sửa **cả hai** khối vi và en. Không dùng dấu gạch
   - `google-play-vi.png`, `google-play-en.png` - https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/badge-guidelines/
   - `app-store-vi.svg`, `app-store-en.svg` - https://developer.apple.com/app-store/marketing/guidelines/
   CSS ép cùng chiều cao 48px nên hai badge luôn bằng nhau. Không tự vẽ lại badge.
-- **Link store:** thay `href="#"` (có comment `TODO`) trong `index.html`.
-- **Ảnh chụp màn hình:** thay `assets/screenshots/placeholder-*.svg` bằng ảnh thật (tỉ lệ dọc ~9:19.5,
-  PNG/WebP), sửa `src` trong `index.html`. Muốn thêm ảnh thì thêm `<figure>`.
+
+## Ảnh chụp màn hình
+
+`assets/screenshots/{vi,en}/01..08.jpg` là bộ ảnh store có headline, lấy từ repo `limno-store`
+(`out/asc-iphone-69/<locale>/`), thu còn rộng 660px. Dựng lại khi đổi ảnh store:
+
+```bash
+for l in vi en; do for n in 01 02 03 04 05 06 07 08; do
+  sips -s format jpeg -s formatOptions 85 --resampleWidth 660 \
+    ../limno-store/out/asc-iphone-69/$l/$n.png --out assets/screenshots/$l/$n.jpg
+done; done
+```
+
+`alt` của từng ảnh là headline ở `Limno/release/store/screenshots.md`; đổi headline thì sửa cả `alt`.
 
 ## Deploy
 
